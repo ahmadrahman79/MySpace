@@ -14,416 +14,564 @@ import {
   Trash2,
   X,
   ChevronRight,
-  BookOpen
+  BookOpen,
+  ArrowLeft,
+  ArrowUpDown,
+  ArrowUp,
+  ArrowDown,
+  Filter,
+  Link as LinkIcon,
+  MessageSquare,
+  Share2,
+  Lock,
+  MoreHorizontal
 } from 'lucide-react';
-import { NoteItem } from '@/lib/types';
+import { NoteItem, Task } from '@/lib/types';
+import { MarkdownRenderer } from '@/components/ui/MarkdownRenderer';
+import { ActivitySelect } from '@/components/ui/ActivitySelect';
+import { SearchableSelect } from '@/components/ui/SearchableSelect';
+import { formatIndonesianDate } from '@/components/ui/IndonesianDatePicker';
+import { RichNotionEditor } from '@/components/ui/RichNotionEditor';
+
+type SortField = 'title' | 'activity' | 'createdBy' | 'lastEditedTime';
+type SortOrder = 'asc' | 'desc';
 
 export default function NotesPage() {
   const [notes, setNotes] = useState<NoteItem[]>([]);
+  const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // If selectedNote is NOT null -> Full Page Notion Editor (Gambar 3); if null -> List of Rows
   const [selectedNote, setSelectedNote] = useState<NoteItem | null>(null);
+  const [editingContent, setEditingContent] = useState('');
+  const [editingTitle, setEditingTitle] = useState('');
+  const [editingActivity, setEditingActivity] = useState('');
+  const [isSaving, setIsSaving] = useState(false);
+
+  // Filters
   const [search, setSearch] = useState('');
   const [selectedActivity, setSelectedActivity] = useState('All');
+  const [selectedAuthor, setSelectedAuthor] = useState('All');
 
-  // Modal / Edit state
-  const [modalOpen, setModalOpen] = useState(false);
-  const [editingNote, setEditingNote] = useState<NoteItem | null>(null);
-  const [title, setTitle] = useState('');
-  const [activity, setActivity] = useState('Umum');
-  const [content, setContent] = useState('');
-  const [formLoading, setFormLoading] = useState(false);
+  // Sorting
+  const [sortField, setSortField] = useState<SortField>('lastEditedTime');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('desc');
 
-  const fetchNotes = async () => {
+  // Link Task state in Full Note View
+  const [showLinkTaskDropdown, setShowLinkTaskDropdown] = useState(false);
+  const [taskToLink, setTaskToLink] = useState('');
+
+  const fetchData = async () => {
     try {
       setLoading(true);
-      const res = await fetch('/api/notes');
-      const data = await res.json();
-      if (data.success) {
-        setNotes(data.data);
-        if (data.data.length > 0 && !selectedNote) {
-          setSelectedNote(data.data[0]);
+      const [nRes, tRes] = await Promise.all([
+        fetch('/api/notes'),
+        fetch('/api/tasks')
+      ]);
+      const [nData, tData] = await Promise.all([
+        nRes.json(),
+        tRes.json()
+      ]);
+
+      if (nData.success) {
+        setNotes(nData.data);
+        if (selectedNote) {
+          const fresh = nData.data.find((n: NoteItem) => n.id === selectedNote.id);
+          if (fresh) {
+            setSelectedNote(fresh);
+          }
         }
       }
+      if (tData.success) setTasks(tData.data);
     } catch (e) {
-      console.error('Failed to fetch notes:', e);
+      console.error('Failed to fetch notes & tasks:', e);
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchNotes();
+    fetchData();
   }, []);
 
-  // Distinct activities
-  const allActivities = useMemo(() => {
+  const allAuthors = useMemo(() => {
     const set = new Set<string>();
     notes.forEach((n) => {
-      if (n.activity) set.add(n.activity);
+      if (n.createdBy) set.add(n.createdBy);
     });
-    return ['All', ...Array.from(set)];
+    return [{ value: 'All', label: 'Semua Penulis' }, ...Array.from(set).map(a => ({ value: a, label: a }))];
   }, [notes]);
 
+  const handleSort = (field: SortField) => {
+    if (sortField === field) {
+      setSortOrder(prev => (prev === 'asc' ? 'desc' : 'asc'));
+    } else {
+      setSortField(field);
+      setSortOrder('asc');
+    }
+  };
+
   const filteredNotes = useMemo(() => {
-    return notes.filter((n) => {
+    const list = notes.filter((n) => {
       const matchSearch =
         !search ||
         n.title.toLowerCase().includes(search.toLowerCase()) ||
         n.content.toLowerCase().includes(search.toLowerCase());
       const matchActivity = selectedActivity === 'All' || n.activity === selectedActivity;
-      return matchSearch && matchActivity;
+      const matchAuthor = selectedAuthor === 'All' || n.createdBy === selectedAuthor;
+      return matchSearch && matchActivity && matchAuthor;
     });
-  }, [notes, search, selectedActivity]);
 
-  const openCreateModal = () => {
-    setEditingNote(null);
-    setTitle('');
-    setActivity('Umum');
-    setContent('');
-    setModalOpen(true);
+    list.sort((a, b) => {
+      const valA = (a[sortField] || '') as string;
+      const valB = (b[sortField] || '') as string;
+      const cmp = valA.localeCompare(valB, undefined, { numeric: true });
+      return sortOrder === 'asc' ? cmp : -cmp;
+    });
+
+    return list;
+  }, [notes, search, selectedActivity, selectedAuthor, sortField, sortOrder]);
+
+  const openNoteDetail = (n: NoteItem) => {
+    setSelectedNote(n);
+    setEditingTitle(n.title);
+    setEditingActivity(n.activity);
+    setEditingContent(n.content);
   };
 
-  const openEditModal = (n: NoteItem) => {
-    setEditingNote(n);
-    setTitle(n.title);
-    setActivity(n.activity);
-    setContent(n.content);
-    setModalOpen(true);
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!title.trim()) return;
-
+  const handleCreateNewNote = async () => {
     try {
-      setFormLoading(true);
-      if (editingNote) {
-        const res = await fetch(`/api/notes/${editingNote.id}`, {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ title, activity, content }),
-        });
-        if (res.ok) {
-          setModalOpen(false);
-          fetchNotes();
-        }
-      } else {
-        const res = await fetch('/api/notes', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ title, activity, content }),
-        });
-        if (res.ok) {
-          setModalOpen(false);
-          fetchNotes();
-        }
+      const newNoteTemplate = {
+        title: 'Untitled Note',
+        activity: 'Administrasi',
+        content: '# Judul Catatan Baru\n\nTuliskan ringkasan, panduan SOP, atau buat tabel sheet di bawah ini:\n\n| Kolom 1 | Kolom 2 |\n| :--- | :--- |\n| Baris 1 | Data A |\n',
+        associatedTaskIds: []
+      };
+      const res = await fetch('/api/notes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newNoteTemplate)
+      });
+      const data = await res.json();
+      if (data.success) {
+        fetchData();
+        openNoteDetail(data.data);
       }
-    } catch (err) {
-      console.error('Error saving note:', err);
+    } catch (e) {
+      console.error('Failed to create new note:', e);
+    }
+  };
+
+  const handleSaveNote = async () => {
+    if (!selectedNote) return;
+    try {
+      setIsSaving(true);
+      await fetch(`/api/notes/${selectedNote.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: editingTitle,
+          activity: editingActivity,
+          content: editingContent,
+        })
+      });
+      fetchData();
+    } catch (e) {
+      console.error('Failed to save note:', e);
     } finally {
-      setFormLoading(false);
+      setIsSaving(false);
     }
   };
 
   const handleDelete = async (id: string) => {
     if (!confirm('Apakah Anda yakin ingin menghapus catatan dokumentasi ini?')) return;
     try {
-      const res = await fetch(`/api/notes/${id}`, { method: 'DELETE' });
-      if (res.ok) {
-        if (selectedNote?.id === id) {
-          setSelectedNote(null);
-        }
-        fetchNotes();
+      await fetch(`/api/notes/${id}`, { method: 'DELETE' });
+      if (selectedNote?.id === id) {
+        setSelectedNote(null);
       }
+      fetchData();
     } catch (e) {
       console.error('Failed to delete note:', e);
     }
   };
 
+  const handleLinkTask = async (taskId: string) => {
+    if (!selectedNote || !taskId) return;
+    const current = selectedNote.associatedTaskIds || [];
+    if (current.includes(taskId)) return;
+    const updated = [...current, taskId];
+
+    try {
+      await fetch(`/api/notes/${selectedNote.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ associatedTaskIds: updated })
+      });
+      setSelectedNote({ ...selectedNote, associatedTaskIds: updated });
+      setShowLinkTaskDropdown(false);
+      setTaskToLink('');
+      fetchData();
+    } catch (e) {
+      console.error('Failed to link task:', e);
+    }
+  };
+
+  const handleUnlinkTask = async (taskId: string) => {
+    if (!selectedNote) return;
+    const current = selectedNote.associatedTaskIds || [];
+    const updated = current.filter(id => id !== taskId);
+
+    try {
+      await fetch(`/api/notes/${selectedNote.id}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ associatedTaskIds: updated })
+      });
+      setSelectedNote({ ...selectedNote, associatedTaskIds: updated });
+      fetchData();
+    } catch (e) {
+      console.error('Failed to unlink task:', e);
+    }
+  };
+
   return (
-    <div className="space-y-6 animate-fade-in">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <div>
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-950/60 dark:text-purple-400">
-            <BookOpen className="h-3.5 w-3.5" />
-            <span>Database D — Notes🤓 (Long-form Notes & Dokumentasi)</span>
-          </div>
-          <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
-            Dokumentasi & Catatan Panjang
-          </h1>
-          <p className="text-xs text-slate-500 dark:text-slate-400">
-            Kumpulan {notes.length} dokumen, SOP, akun sistem, dan pemikiran panjang berformat Markdown.
-          </p>
-        </div>
-
-        <button
-          onClick={openCreateModal}
-          className="flex items-center gap-1.5 rounded-xl bg-purple-600 px-4 py-2 text-xs font-semibold text-white shadow-xs hover:bg-purple-700 transition"
-        >
-          <Plus className="h-4 w-4" />
-          <span>+ Catatan Baru</span>
-        </button>
-      </div>
-
-      {/* Main 2-column Layout */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 min-h-[650px]">
-        {/* Left List Column (4 cols) */}
-        <div className="lg:col-span-4 rounded-2xl border border-slate-200/80 bg-white p-4 dark:border-slate-800 dark:bg-slate-900 shadow-xs flex flex-col">
-          {/* Search & Category Filter */}
-          <div className="space-y-2 pb-3 border-b border-slate-100 dark:border-slate-800">
-            <div className="relative">
-              <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-slate-400" />
-              <input
-                type="text"
-                placeholder="Cari dokumentasi..."
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-slate-50/50 pl-8 pr-3 py-1.5 text-xs text-slate-900 focus:border-purple-500 focus:bg-white focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
-              />
+    <div className="space-y-4 animate-fade-in pb-16">
+      {/* 1. NOTION FULL PAGE VIEW / EDIT STRICTLY AS GAMBAR 3 */}
+      {selectedNote ? (
+        <div className="rounded-3xl border border-slate-200/90 bg-white dark:border-slate-800 dark:bg-slate-900 shadow-sm p-6 sm:p-10 space-y-6 max-w-5xl mx-auto animate-in fade-in zoom-in-95 duration-150">
+          {/* Top Breadcrumb & Actions Bar (Gambar 3: Notes 🤓 / Title ... Edited just now ... Share) */}
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-100 dark:border-slate-800 text-xs">
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setSelectedNote(null)}
+                className="flex items-center gap-1.5 font-bold text-slate-500 hover:text-slate-900 transition"
+              >
+                <ArrowLeft className="h-4 w-4" />
+                <span>Notes 🤓</span>
+              </button>
+              <span className="text-slate-300">/</span>
+              <span className="text-slate-700 dark:text-slate-200 font-semibold truncate max-w-xs">
+                {editingTitle}
+              </span>
             </div>
 
-            <div className="flex items-center gap-1.5 overflow-x-auto pb-1">
-              {allActivities.slice(0, 6).map((act) => (
-                <button
-                  key={act}
-                  onClick={() => setSelectedActivity(act)}
-                  className={`rounded-lg px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap transition ${
-                    selectedActivity === act
-                      ? 'bg-purple-600 text-white'
-                      : 'bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400'
-                  }`}
-                >
-                  {act}
-                </button>
-              ))}
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] text-slate-400">
+                Terakhir diedit {formatIndonesianDate(selectedNote.lastEditedTime || selectedNote.createdAt)}
+              </span>
+              <button
+                onClick={handleSaveNote}
+                disabled={isSaving}
+                className="px-3.5 py-1.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition shadow-xs"
+              >
+                {isSaving ? 'Menyimpan...' : 'Simpan Dokumen'}
+              </button>
+              <button
+                onClick={() => handleDelete(selectedNote.id)}
+                className="p-1.5 rounded-lg text-rose-500 hover:bg-rose-50 transition"
+                title="Hapus Dokumen"
+              >
+                <Trash2 className="h-4 w-4" />
+              </button>
             </div>
           </div>
 
-          {/* Notes list */}
-          <div className="mt-3 flex-1 overflow-y-auto space-y-1.5 pr-1 max-h-[600px]">
-            {filteredNotes.map((n) => {
-              const isSelected = selectedNote?.id === n.id;
-              return (
-                <div
-                  key={n.id}
-                  onClick={() => setSelectedNote(n)}
-                  className={`group cursor-pointer rounded-xl p-3 border transition ${
-                    isSelected
-                      ? 'border-purple-300 bg-purple-50/70 dark:border-purple-900 dark:bg-purple-950/40 shadow-xs'
-                      : 'border-transparent hover:bg-slate-50 dark:hover:bg-slate-800/50'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <span className="rounded-md bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-700 dark:bg-slate-800 dark:text-slate-300">
-                      {n.activity}
-                    </span>
-                    <span className="text-[10px] text-slate-400">
-                      {n.lastEditedTime || n.createdAt}
-                    </span>
-                  </div>
-
-                  <h4 className="mt-1.5 text-xs font-bold text-slate-900 dark:text-white line-clamp-1">
-                    {n.title}
-                  </h4>
-
-                  <p className="mt-1 text-[11px] text-slate-500 dark:text-slate-400 line-clamp-2 leading-relaxed">
-                    {n.content.replace(/#+\s/g, '').replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1')}
-                  </p>
-
-                  {n.images && n.images.length > 0 && (
-                    <div className="mt-2 flex items-center gap-1 text-[10px] text-indigo-600 dark:text-indigo-400">
-                      <ImageIcon className="h-3 w-3" />
-                      <span>{n.images.length} Gambar terlampir</span>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+          {/* Large Document Title (Gambar 3) */}
+          <div>
+            <input
+              type="text"
+              value={editingTitle}
+              onChange={(e) => setEditingTitle(e.target.value)}
+              placeholder="Judul Catatan..."
+              className="w-full text-2xl sm:text-4xl font-black text-slate-900 dark:text-white bg-transparent border-none focus:outline-none placeholder:text-slate-300"
+            />
           </div>
-        </div>
 
-        {/* Right Viewer Column (8 cols) */}
-        <div className="lg:col-span-8 rounded-2xl border border-slate-200/80 bg-white p-6 dark:border-slate-800 dark:bg-slate-900 shadow-xs flex flex-col">
-          {selectedNote ? (
-            <div className="space-y-5">
-              {/* Note Header */}
-              <div className="flex items-start justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className="rounded-md bg-purple-100 px-2.5 py-0.5 text-xs font-bold text-purple-800 dark:bg-purple-950 dark:text-purple-300">
-                      {selectedNote.activity}
-                    </span>
-                    <span className="text-xs text-slate-400 flex items-center gap-1">
-                      <User className="h-3.5 w-3.5" />
-                      {selectedNote.createdBy}
-                    </span>
-                    <span className="text-xs text-slate-400 flex items-center gap-1">
-                      <Calendar className="h-3.5 w-3.5" />
-                      {selectedNote.lastEditedTime || selectedNote.createdAt}
-                    </span>
-                  </div>
-                  <h2 className="mt-2 text-xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-                    {selectedNote.title}
-                  </h2>
-                </div>
+          {/* Properties Table (Gambar 3: Last Edited Time, Activity, Created By) */}
+          <div className="space-y-3 py-2 text-xs border-y border-slate-100 dark:border-slate-800">
+            <div className="flex items-center">
+              <span className="w-36 font-semibold text-slate-400 flex items-center gap-1.5">
+                <Calendar className="h-3.5 w-3.5" />
+                <span>Last Edited Time</span>
+              </span>
+              <span className="font-bold text-slate-800 dark:text-slate-200">
+                {formatIndonesianDate(selectedNote.lastEditedTime || selectedNote.createdAt)}
+              </span>
+            </div>
 
-                <div className="flex items-center gap-1.5">
-                  <button
-                    onClick={() => openEditModal(selectedNote)}
-                    className="flex items-center gap-1 rounded-xl border border-slate-200 px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
-                  >
-                    <Edit2 className="h-3.5 w-3.5" />
-                    <span>Edit</span>
-                  </button>
-                  <button
-                    onClick={() => handleDelete(selectedNote.id)}
-                    className="rounded-xl border border-rose-200 p-1.5 text-rose-600 hover:bg-rose-50 dark:border-rose-900 dark:text-rose-400"
-                    title="Hapus"
-                  >
-                    <Trash2 className="h-4 w-4" />
-                  </button>
-                </div>
+            <div className="flex items-center">
+              <span className="w-36 font-semibold text-slate-400 flex items-center gap-1.5">
+                <Tag className="h-3.5 w-3.5" />
+                <span>Activity</span>
+              </span>
+              <div className="w-44">
+                <ActivitySelect
+                  value={editingActivity}
+                  onChange={setEditingActivity}
+                />
               </div>
+            </div>
 
-              {/* Note Markdown Content Body */}
-              <div className="prose prose-slate dark:prose-invert max-w-none text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-sans bg-slate-50/50 dark:bg-slate-950/30 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
-                {selectedNote.content}
+            <div className="flex items-center">
+              <span className="w-36 font-semibold text-slate-400 flex items-center gap-1.5">
+                <User className="h-3.5 w-3.5" />
+                <span>Created By</span>
+              </span>
+              <span className="font-bold text-slate-800 dark:text-slate-200">
+                {selectedNote.createdBy || 'Ahmad Rahman'}
+              </span>
+            </div>
+          </div>
+
+          {/* Connected Tasks Section */}
+          <div className="rounded-2xl border border-slate-200/80 dark:border-slate-800 bg-slate-50/60 p-3.5 space-y-2 text-xs">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-1.5 font-bold text-slate-700 dark:text-slate-300">
+                <LinkIcon className="h-3.5 w-3.5 text-indigo-500" />
+                <span>Tugas Terhubung ({selectedNote.associatedTaskIds?.length || 0})</span>
               </div>
-
-              {/* Image Attachments Gallery */}
-              {selectedNote.images && selectedNote.images.length > 0 && (
-                <div className="space-y-3 pt-3 border-t border-slate-100 dark:border-slate-800">
-                  <div className="flex items-center gap-2 text-xs font-bold text-slate-800 dark:text-slate-200">
-                    <ImageIcon className="h-4 w-4 text-indigo-500" />
-                    <span>Lampiran Gambar & Screenshot ({selectedNote.images.length})</span>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {selectedNote.images.map((img, idx) => (
-                      <div
-                        key={idx}
-                        className="overflow-hidden rounded-xl border border-slate-200 bg-slate-100 dark:border-slate-800 dark:bg-slate-800/60"
-                      >
-                        <img
-                          src={img.url}
-                          alt={img.name}
-                          className="w-full h-48 object-contain bg-white dark:bg-slate-900 p-2"
-                        />
-                        <div className="p-2 text-center text-[11px] font-medium text-slate-600 dark:text-slate-400 truncate">
-                          {img.name}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Links section */}
-              {selectedNote.links && selectedNote.links.length > 0 && (
-                <div className="space-y-2 pt-3 border-t border-slate-100 dark:border-slate-800">
-                  <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                    Tautan Terkait:
-                  </span>
-                  <div className="flex flex-wrap gap-2">
-                    {selectedNote.links.map((link, idx) => (
-                      <a
-                        key={idx}
-                        href={link.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700 hover:bg-indigo-100 dark:bg-indigo-950 dark:text-indigo-300"
-                      >
-                        <span>{link.title}</span>
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          ) : (
-            <div className="flex-1 flex flex-col items-center justify-center p-12 text-center text-slate-400">
-              <FileText className="h-10 w-10 mb-2 opacity-50" />
-              <p className="text-sm font-medium">Pilih catatan di sisi kiri untuk membaca isi dokumen</p>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Note Create / Edit Modal */}
-      {modalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
-          <div className="w-full max-w-2xl rounded-2xl bg-white p-6 shadow-2xl border border-slate-200 dark:border-slate-800 dark:bg-slate-900">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
-              <h3 className="text-base font-bold text-slate-900 dark:text-white">
-                {editingNote ? 'Edit Dokumentasi' : 'Buat Dokumentasi Baru'}
-              </h3>
-              <button onClick={() => setModalOpen(false)} className="text-slate-400 hover:text-slate-600">
-                <X className="h-5 w-5" />
+              <button
+                onClick={() => setShowLinkTaskDropdown(!showLinkTaskDropdown)}
+                className="text-emerald-600 font-bold hover:underline"
+              >
+                {showLinkTaskDropdown ? 'Batal' : '+ Hubungkan Tugas'}
               </button>
             </div>
 
-            <form onSubmit={handleSubmit} className="mt-4 space-y-4">
-              <div className="grid grid-cols-3 gap-3">
-                <div className="col-span-2">
-                  <label className="block text-xs font-medium text-slate-700 dark:text-slate-300">
-                    Judul Catatan / Dokumen <span className="text-rose-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                    className="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 focus:border-purple-500 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
-                  />
-                </div>
-
-                <div>
-                  <label className="block text-xs font-medium text-slate-700 dark:text-slate-300">Activity</label>
-                  <input
-                    type="text"
-                    value={activity}
-                    onChange={(e) => setActivity(e.target.value)}
-                    className="mt-1 w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-slate-900 focus:border-purple-500 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
-                  />
-                </div>
+            {showLinkTaskDropdown && (
+              <div className="flex items-center gap-2 pt-2 border-t border-slate-200">
+                <select
+                  value={taskToLink}
+                  onChange={(e) => setTaskToLink(e.target.value)}
+                  className="flex-1 rounded-lg border border-emerald-500 bg-white px-3 py-1.5 text-xs text-slate-900"
+                >
+                  <option value="">Pilih tugas untuk dihubungkan...</option>
+                  {tasks.map(t => (
+                    <option key={t.id} value={t.id}>
+                      {t.name} ({t.activity})
+                    </option>
+                  ))}
+                </select>
+                <button
+                  onClick={() => handleLinkTask(taskToLink)}
+                  disabled={!taskToLink}
+                  className="rounded-lg bg-emerald-600 text-white px-3 py-1.5 text-xs font-bold"
+                >
+                  Hubungkan
+                </button>
               </div>
+            )}
 
-              <div>
-                <label className="block text-xs font-medium text-slate-700 dark:text-slate-300">
-                  Isi Dokumen (Format Markdown didukung)
-                </label>
-                <textarea
-                  rows={10}
-                  value={content}
-                  onChange={(e) => setContent(e.target.value)}
-                  placeholder="# Judul Bagian&#10;&#10;- Poin 1&#10;- Poin 2&#10;&#10;Detail penjelasan..."
-                  className="mt-1 w-full font-mono text-xs rounded-xl border border-slate-200 bg-white p-3 text-slate-900 focus:border-purple-500 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+            <div className="flex flex-wrap gap-2 pt-1">
+              {(!selectedNote.associatedTaskIds || selectedNote.associatedTaskIds.length === 0) ? (
+                <span className="text-slate-400 italic">Belum ada tugas terhubung.</span>
+              ) : (
+                selectedNote.associatedTaskIds.map((tId) => {
+                  const t = tasks.find(item => item.id === tId);
+                  return (
+                    <div key={tId} className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-white border border-slate-200 text-slate-800 font-bold">
+                      <span>✓ {t ? t.name : tId}</span>
+                      <button onClick={() => handleUnlinkTask(tId)} className="text-slate-400 hover:text-rose-500">
+                        <X className="h-3 w-3" />
+                      </button>
+                    </div>
+                  );
+                })
+              )}
+            </div>
+          </div>
+
+          {/* RICH NOTION EDITOR BODY (Gambar 3 with Google Sheet Table & Text Formats) */}
+          <div className="pt-2 space-y-2">
+            <RichNotionEditor
+              content={editingContent}
+              onChange={setEditingContent}
+              availableNotes={notes.filter(n => n.id !== selectedNote.id)}
+              minHeight="420px"
+              placeholder="Tuliskan isi catatan dokumen di sini..."
+            />
+          </div>
+        </div>
+      ) : (
+        /* 2. DEFAULT VIEW: DAFTAR BARIS CATATAN DENGAN HEADER & MULTI-KOLOM SORTING */
+        <div className="space-y-4">
+          {/* Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pb-1 border-b border-slate-100 dark:border-slate-800">
+            <div>
+              <div className="flex items-center gap-2">
+                <BookOpen className="h-5 w-5 text-purple-600" />
+                <h1 className="text-xl font-black tracking-tight text-slate-900 dark:text-white">
+                  Daftar Catatan & Dokumentasi
+                </h1>
+              </div>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Format dokumen Notion & Google Sheet terintegrasi. Klik baris untuk membuka penuh.
+              </p>
+            </div>
+
+            <button
+              onClick={handleCreateNewNote}
+              className="flex items-center gap-1.5 rounded-xl bg-purple-600 hover:bg-purple-700 text-white px-3.5 py-2 text-xs font-bold shadow-xs transition"
+            >
+              <Plus className="h-3.5 w-3.5" />
+              <span>+ Buat Catatan Baru</span>
+            </button>
+          </div>
+
+          {/* Multi-column Filters with Gambar 1 Dropdown */}
+          <div className="rounded-2xl border border-slate-200/80 bg-white p-3 dark:border-slate-800 dark:bg-slate-900 shadow-2xs">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="relative">
+                <Search className="absolute left-3 top-2.5 h-3.5 w-3.5 text-slate-400" />
+                <input
+                  type="text"
+                  placeholder="Cari judul atau isi catatan..."
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className="w-full rounded-lg border border-emerald-500/80 bg-white pl-8 pr-3 py-1.5 text-xs text-slate-900 focus:outline-none dark:bg-slate-800 dark:text-white"
                 />
               </div>
 
-              <div className="pt-3 flex justify-end gap-2 border-t border-slate-100 dark:border-slate-800">
-                <button
-                  type="button"
-                  onClick={() => setModalOpen(false)}
-                  className="rounded-xl px-4 py-2 text-xs font-medium text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
-                >
-                  Batal
-                </button>
-                <button
-                  type="submit"
-                  disabled={formLoading}
-                  className="rounded-xl bg-purple-600 px-5 py-2 text-xs font-semibold text-white shadow-xs hover:bg-purple-700 disabled:opacity-50"
-                >
-                  {formLoading ? 'Menyimpan...' : 'Simpan Dokumentasi'}
-                </button>
+              <div>
+                <ActivitySelect
+                  value={selectedActivity}
+                  onChange={setSelectedActivity}
+                  includeAllOption={true}
+                />
               </div>
-            </form>
+
+              <div>
+                <SearchableSelect
+                  value={selectedAuthor}
+                  options={allAuthors}
+                  onChange={setSelectedAuthor}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* TABLE DAFTAR BARIS CATATAN */}
+          <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white dark:border-slate-800 dark:bg-slate-900 shadow-sm">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left text-xs border-collapse">
+                <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 uppercase tracking-wider text-[11px] border-b border-slate-200 dark:border-slate-700">
+                  <tr>
+                    <th
+                      onClick={() => handleSort('title')}
+                      className="px-5 py-3 font-bold cursor-pointer hover:bg-slate-100 select-none"
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span>Judul Catatan</span>
+                        {sortField === 'title' && (
+                          sortOrder === 'asc' ? <ArrowUp className="h-3 w-3 text-purple-600" /> : <ArrowDown className="h-3 w-3 text-purple-600" />
+                        )}
+                      </div>
+                    </th>
+
+                    <th
+                      onClick={() => handleSort('activity')}
+                      className="px-4 py-3 font-bold cursor-pointer hover:bg-slate-100 select-none"
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span>Aktivitas</span>
+                        {sortField === 'activity' && (
+                          sortOrder === 'asc' ? <ArrowUp className="h-3 w-3 text-purple-600" /> : <ArrowDown className="h-3 w-3 text-purple-600" />
+                        )}
+                      </div>
+                    </th>
+
+                    <th
+                      onClick={() => handleSort('createdBy')}
+                      className="px-4 py-3 font-bold cursor-pointer hover:bg-slate-100 select-none"
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span>Dibuat Oleh</span>
+                        {sortField === 'createdBy' && (
+                          sortOrder === 'asc' ? <ArrowUp className="h-3 w-3 text-purple-600" /> : <ArrowDown className="h-3 w-3 text-purple-600" />
+                        )}
+                      </div>
+                    </th>
+
+                    <th
+                      onClick={() => handleSort('lastEditedTime')}
+                      className="px-4 py-3 font-bold cursor-pointer hover:bg-slate-100 select-none"
+                    >
+                      <div className="flex items-center gap-1.5">
+                        <span>Terakhir Diedit</span>
+                        {sortField === 'lastEditedTime' && (
+                          sortOrder === 'asc' ? <ArrowUp className="h-3 w-3 text-purple-600" /> : <ArrowDown className="h-3 w-3 text-purple-600" />
+                        )}
+                      </div>
+                    </th>
+
+                    <th className="px-4 py-3 font-bold text-center">Tugas Terhubung</th>
+                    <th className="px-4 py-3 font-bold text-right">Aksi</th>
+                  </tr>
+                </thead>
+
+                <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                  {filteredNotes.map((n) => (
+                    <tr
+                      key={n.id}
+                      onClick={() => openNoteDetail(n)}
+                      className="group cursor-pointer hover:bg-purple-50/40 dark:hover:bg-slate-800/50 transition"
+                    >
+                      <td className="px-5 py-3.5">
+                        <div className="flex items-center gap-2">
+                          <FileText className="h-4 w-4 text-purple-600 shrink-0" />
+                          <span className="font-extrabold text-slate-900 dark:text-white group-hover:text-purple-600 transition">
+                            {n.title}
+                          </span>
+                        </div>
+                      </td>
+
+                      <td className="px-4 py-3.5">
+                        <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-[11px] font-bold text-slate-700 dark:text-slate-300">
+                          {n.activity}
+                        </span>
+                      </td>
+
+                      <td className="px-4 py-3.5 text-slate-600 dark:text-slate-400 font-medium">
+                        {n.createdBy || 'Ahmad Rahman'}
+                      </td>
+
+                      <td className="px-4 py-3.5 text-slate-600 dark:text-slate-400 whitespace-nowrap font-medium">
+                        {formatIndonesianDate(n.lastEditedTime || n.createdAt)}
+                      </td>
+
+                      <td className="px-4 py-3.5 text-center">
+                        <span className="rounded-full bg-purple-50 text-purple-800 font-bold px-2 py-0.5 text-[11px]">
+                          {n.associatedTaskIds?.length || 0} Tugas
+                        </span>
+                      </td>
+
+                      <td className="px-4 py-3.5 text-right" onClick={(e) => e.stopPropagation()}>
+                        <div className="flex items-center justify-end gap-1">
+                          <button
+                            onClick={() => openNoteDetail(n)}
+                            className="p-1 rounded text-slate-400 hover:text-purple-600 transition"
+                            title="Buka Penuh"
+                          >
+                            <ExternalLink className="h-3.5 w-3.5" />
+                          </button>
+                          <button
+                            onClick={() => handleDelete(n.id)}
+                            className="p-1 rounded text-rose-400 hover:text-rose-600 transition"
+                            title="Hapus"
+                          >
+                            <Trash2 className="h-3.5 w-3.5" />
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       )}
     </div>
   );
 }
-

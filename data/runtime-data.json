@@ -1,6 +1,23 @@
 {
   "tasks": [
     {
+      "id": "task-from-sticky-1793998340888-7yhzd",
+      "name": "cek stiky",
+      "activity": "Dasar",
+      "progress": "Not Started",
+      "finishAt": "2026-11-07",
+      "finishAtRaw": "2026-11-07",
+      "statusKipApp": "Pending",
+      "note": "jojis",
+      "priority": "Medium",
+      "imageUrls": [],
+      "linkUrls": [],
+      "originStickyNoteId": "sticky-1793998340888-7yhzd",
+      "eventId": null,
+      "createdAt": "2026-11-06T21:12:52.394Z",
+      "updatedAt": "2026-11-06T21:17:44.974Z"
+    },
+    {
       "id": "task-1",
       "name": "Monitoring pemutakhiran supas",
       "activity": "Supas",
@@ -14539,14 +14556,30 @@
   ],
   "stickyNotes": [
     {
+      "title": "cek stiky",
+      "content": "jojis",
+      "area": "Personal",
+      "priority": "Medium",
+      "status": "In progress",
+      "date": "2026-11-07",
+      "completed": false,
+      "color": "amber",
+      "convertedToTaskId": "task-from-sticky-1793998340888-7yhzd",
+      "imageUrls": [],
+      "linkUrls": [],
+      "id": "sticky-1793998340888-7yhzd",
+      "createdAt": "2026-11-06T20:52:20.888Z",
+      "updatedAt": "2026-11-06T21:12:52.394Z"
+    },
+    {
       "id": "sticky-1",
       "title": "Cek revisi anggaran kegiatan Sakernas",
       "content": "Pastikan daftar belanja ATK dan translok sudah sesuai pedoman terbaru BPS.",
       "area": "Business",
       "priority": "High",
-      "status": "In progress",
+      "status": "Done",
       "date": "2026-11-05",
-      "completed": false,
+      "completed": true,
       "color": "amber",
       "convertedToTaskId": null,
       "imageUrls": [],
@@ -14554,7 +14587,7 @@
         "https://webbps.bps.go.id"
       ],
       "createdAt": "2026-11-01",
-      "updatedAt": "2026-11-02"
+      "updatedAt": "2026-11-06T21:22:00.656Z"
     },
     {
       "id": "sticky-2",

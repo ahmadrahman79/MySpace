@@ -10,4 +10,5 @@ yarn-error.log*
 .env*.local
 .env
 extracted_data
+*.tsbuildinfo
 

@@ -1,16 +1,11 @@
+global.WebSocket = class DummyWS {};
 const fs = require('fs');
 const path = require('path');
 const { createClient } = require('@supabase/supabase-js');
 
 async function seedSupabase() {
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-
-  if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('your-project')) {
-    console.error('Error: NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY / ANON_KEY must be provided.');
-    console.error('Example: NEXT_PUBLIC_SUPABASE_URL=https://xyz.supabase.co SUPABASE_SERVICE_ROLE_KEY=eyJh... node scripts/seed-supabase.js');
-    process.exit(1);
-  }
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://wbgkwhjmslnjmriygesg.supabase.co';
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
 
   const seedFile = path.join(__dirname, '..', 'data', 'seed-data.json');
   if (!fs.existsSync(seedFile)) {
@@ -26,7 +21,6 @@ async function seedSupabase() {
     // 1. Tasks
     if (seedData.tasks && seedData.tasks.length > 0) {
       console.log(`Seeding ${seedData.tasks.length} tasks...`);
-      // Insert in batches of 100 to avoid payload size limit
       for (let i = 0; i < seedData.tasks.length; i += 100) {
         const batch = seedData.tasks.slice(i, i + 100).map(t => ({
           id: t.id,
@@ -74,7 +68,7 @@ async function seedSupabase() {
       console.log('✓ Events seeded successfully!');
     }
 
-    // 3. Notes🤓
+    // 3. Notes
     if (seedData.notes && seedData.notes.length > 0) {
       console.log(`Seeding ${seedData.notes.length} notes...`);
       for (let i = 0; i < seedData.notes.length; i += 50) {
@@ -110,30 +104,10 @@ async function seedSupabase() {
         completed: s.completed,
         color: s.color,
         converted_to_task_id: s.convertedToTaskId,
-        image_urls: s.imageUrls || [],
-        link_urls: s.linkUrls || [],
       }));
       const { error } = await supabase.from('sticky_notes').upsert(batch, { onConflict: 'id' });
       if (error) console.error('Error seeding sticky notes:', error.message);
       else console.log('✓ Sticky notes seeded successfully!');
-    }
-
-    // 5. Resources
-    if (seedData.resources && seedData.resources.length > 0) {
-      console.log(`Seeding ${seedData.resources.length} resources...`);
-      const batch = seedData.resources.map(r => ({
-        id: r.id,
-        title: r.title,
-        url: r.url,
-        category: r.category,
-        description: r.description,
-        tags: r.tags || [],
-        type: r.type || 'link',
-        created_at: r.createdAt,
-      }));
-      const { error } = await supabase.from('resources').upsert(batch, { onConflict: 'id' });
-      if (error) console.error('Error seeding resources:', error.message);
-      else console.log('✓ Resources seeded successfully!');
     }
 
     console.log('\n🎉 All seed data successfully loaded into Supabase!');
@@ -143,4 +117,3 @@ async function seedSupabase() {
 }
 
 seedSupabase();
-
