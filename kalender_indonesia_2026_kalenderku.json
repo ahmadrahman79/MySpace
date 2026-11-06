@@ -1,0 +1,4358 @@
+{
+  "metadata": {
+    "judul": "Kalender Indonesia Tahun 2026",
+    "sumber": "https://kalenderku.id/",
+    "tahun": 2026,
+    "jumlah_hari": 365,
+    "jumlah_libur_nasional_dan_hari_penting_berlabel_libur_nasional": 17,
+    "jumlah_cuti_bersama": 8,
+    "jumlah_periode_libur_panjang_dari_situs": 10,
+    "catatan": "Data tanggal dan peristiwa ditranskripsikan dari halaman kalenderku.id tahun 2026. Nama hari dan atribut akhir pekan dihitung dari tanggal kalender."
+  },
+  "hari": [
+    {
+      "tanggal": "2026-01-01",
+      "hari": "Kamis",
+      "nomor_hari": 1,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Tahun Baru Masehi 2026",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-01-02",
+      "hari": "Jumat",
+      "nomor_hari": 2,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-03",
+      "hari": "Sabtu",
+      "nomor_hari": 3,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-04",
+      "hari": "Minggu",
+      "nomor_hari": 4,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-05",
+      "hari": "Senin",
+      "nomor_hari": 5,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-06",
+      "hari": "Selasa",
+      "nomor_hari": 6,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-07",
+      "hari": "Rabu",
+      "nomor_hari": 7,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-08",
+      "hari": "Kamis",
+      "nomor_hari": 8,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-09",
+      "hari": "Jumat",
+      "nomor_hari": 9,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-10",
+      "hari": "Sabtu",
+      "nomor_hari": 10,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-11",
+      "hari": "Minggu",
+      "nomor_hari": 11,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-12",
+      "hari": "Senin",
+      "nomor_hari": 12,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-13",
+      "hari": "Selasa",
+      "nomor_hari": 13,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-14",
+      "hari": "Rabu",
+      "nomor_hari": 14,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-15",
+      "hari": "Kamis",
+      "nomor_hari": 15,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-16",
+      "hari": "Jumat",
+      "nomor_hari": 16,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Isra Mikraj Nabi Muhammad SAW",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-01-17",
+      "hari": "Sabtu",
+      "nomor_hari": 17,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-18",
+      "hari": "Minggu",
+      "nomor_hari": 18,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-19",
+      "hari": "Senin",
+      "nomor_hari": 19,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-20",
+      "hari": "Selasa",
+      "nomor_hari": 20,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-21",
+      "hari": "Rabu",
+      "nomor_hari": 21,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-22",
+      "hari": "Kamis",
+      "nomor_hari": 22,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-23",
+      "hari": "Jumat",
+      "nomor_hari": 23,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-24",
+      "hari": "Sabtu",
+      "nomor_hari": 24,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-25",
+      "hari": "Minggu",
+      "nomor_hari": 25,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-26",
+      "hari": "Senin",
+      "nomor_hari": 26,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-27",
+      "hari": "Selasa",
+      "nomor_hari": 27,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-28",
+      "hari": "Rabu",
+      "nomor_hari": 28,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-29",
+      "hari": "Kamis",
+      "nomor_hari": 29,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-30",
+      "hari": "Jumat",
+      "nomor_hari": 30,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-01-31",
+      "hari": "Sabtu",
+      "nomor_hari": 31,
+      "bulan": 1,
+      "nama_bulan": "Januari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-01",
+      "hari": "Minggu",
+      "nomor_hari": 1,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-02",
+      "hari": "Senin",
+      "nomor_hari": 2,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-03",
+      "hari": "Selasa",
+      "nomor_hari": 3,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-04",
+      "hari": "Rabu",
+      "nomor_hari": 4,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-05",
+      "hari": "Kamis",
+      "nomor_hari": 5,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-06",
+      "hari": "Jumat",
+      "nomor_hari": 6,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-07",
+      "hari": "Sabtu",
+      "nomor_hari": 7,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-08",
+      "hari": "Minggu",
+      "nomor_hari": 8,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-09",
+      "hari": "Senin",
+      "nomor_hari": 9,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-10",
+      "hari": "Selasa",
+      "nomor_hari": 10,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-11",
+      "hari": "Rabu",
+      "nomor_hari": 11,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-12",
+      "hari": "Kamis",
+      "nomor_hari": 12,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-13",
+      "hari": "Jumat",
+      "nomor_hari": 13,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-14",
+      "hari": "Sabtu",
+      "nomor_hari": 14,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-15",
+      "hari": "Minggu",
+      "nomor_hari": 15,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-16",
+      "hari": "Senin",
+      "nomor_hari": 16,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Tahun Baru Imlek 2577 Kongzili",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-02-17",
+      "hari": "Selasa",
+      "nomor_hari": 17,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Tahun Baru Imlek 2577 Kongzili",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-02-18",
+      "hari": "Rabu",
+      "nomor_hari": 18,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-19",
+      "hari": "Kamis",
+      "nomor_hari": 19,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-20",
+      "hari": "Jumat",
+      "nomor_hari": 20,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-21",
+      "hari": "Sabtu",
+      "nomor_hari": 21,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-22",
+      "hari": "Minggu",
+      "nomor_hari": 22,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-23",
+      "hari": "Senin",
+      "nomor_hari": 23,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-24",
+      "hari": "Selasa",
+      "nomor_hari": 24,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-25",
+      "hari": "Rabu",
+      "nomor_hari": 25,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-26",
+      "hari": "Kamis",
+      "nomor_hari": 26,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-27",
+      "hari": "Jumat",
+      "nomor_hari": 27,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-02-28",
+      "hari": "Sabtu",
+      "nomor_hari": 28,
+      "bulan": 2,
+      "nama_bulan": "Februari",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-01",
+      "hari": "Minggu",
+      "nomor_hari": 1,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-02",
+      "hari": "Senin",
+      "nomor_hari": 2,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-03",
+      "hari": "Selasa",
+      "nomor_hari": 3,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-04",
+      "hari": "Rabu",
+      "nomor_hari": 4,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-05",
+      "hari": "Kamis",
+      "nomor_hari": 5,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-06",
+      "hari": "Jumat",
+      "nomor_hari": 6,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-07",
+      "hari": "Sabtu",
+      "nomor_hari": 7,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-08",
+      "hari": "Minggu",
+      "nomor_hari": 8,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-09",
+      "hari": "Senin",
+      "nomor_hari": 9,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-10",
+      "hari": "Selasa",
+      "nomor_hari": 10,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-11",
+      "hari": "Rabu",
+      "nomor_hari": 11,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-12",
+      "hari": "Kamis",
+      "nomor_hari": 12,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-13",
+      "hari": "Jumat",
+      "nomor_hari": 13,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-14",
+      "hari": "Sabtu",
+      "nomor_hari": 14,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-15",
+      "hari": "Minggu",
+      "nomor_hari": 15,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-16",
+      "hari": "Senin",
+      "nomor_hari": 16,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-17",
+      "hari": "Selasa",
+      "nomor_hari": 17,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-18",
+      "hari": "Rabu",
+      "nomor_hari": 18,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Suci Nyepi Tahun Baru Saka 1948",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-19",
+      "hari": "Kamis",
+      "nomor_hari": 19,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Suci Nyepi Tahun Baru Saka 1948",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-20",
+      "hari": "Jumat",
+      "nomor_hari": 20,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-21",
+      "hari": "Sabtu",
+      "nomor_hari": 21,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Raya Idulfitri 1447 Hijriah",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-22",
+      "hari": "Minggu",
+      "nomor_hari": 22,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Raya Idulfitri 1447 Hijriah",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-23",
+      "hari": "Senin",
+      "nomor_hari": 23,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-24",
+      "hari": "Selasa",
+      "nomor_hari": 24,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-03-25",
+      "hari": "Rabu",
+      "nomor_hari": 25,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-26",
+      "hari": "Kamis",
+      "nomor_hari": 26,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-27",
+      "hari": "Jumat",
+      "nomor_hari": 27,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-28",
+      "hari": "Sabtu",
+      "nomor_hari": 28,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-29",
+      "hari": "Minggu",
+      "nomor_hari": 29,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-30",
+      "hari": "Senin",
+      "nomor_hari": 30,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-03-31",
+      "hari": "Selasa",
+      "nomor_hari": 31,
+      "bulan": 3,
+      "nama_bulan": "Maret",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-01",
+      "hari": "Rabu",
+      "nomor_hari": 1,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-02",
+      "hari": "Kamis",
+      "nomor_hari": 2,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-03",
+      "hari": "Jumat",
+      "nomor_hari": 3,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Wafat Yesus Kristus",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-04-04",
+      "hari": "Sabtu",
+      "nomor_hari": 4,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-05",
+      "hari": "Minggu",
+      "nomor_hari": 5,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Paskah",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-04-06",
+      "hari": "Senin",
+      "nomor_hari": 6,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-07",
+      "hari": "Selasa",
+      "nomor_hari": 7,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-08",
+      "hari": "Rabu",
+      "nomor_hari": 8,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-09",
+      "hari": "Kamis",
+      "nomor_hari": 9,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-10",
+      "hari": "Jumat",
+      "nomor_hari": 10,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-11",
+      "hari": "Sabtu",
+      "nomor_hari": 11,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-12",
+      "hari": "Minggu",
+      "nomor_hari": 12,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-13",
+      "hari": "Senin",
+      "nomor_hari": 13,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-14",
+      "hari": "Selasa",
+      "nomor_hari": 14,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-15",
+      "hari": "Rabu",
+      "nomor_hari": 15,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-16",
+      "hari": "Kamis",
+      "nomor_hari": 16,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-17",
+      "hari": "Jumat",
+      "nomor_hari": 17,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-18",
+      "hari": "Sabtu",
+      "nomor_hari": 18,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-19",
+      "hari": "Minggu",
+      "nomor_hari": 19,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-20",
+      "hari": "Senin",
+      "nomor_hari": 20,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-21",
+      "hari": "Selasa",
+      "nomor_hari": 21,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-22",
+      "hari": "Rabu",
+      "nomor_hari": 22,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-23",
+      "hari": "Kamis",
+      "nomor_hari": 23,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-24",
+      "hari": "Jumat",
+      "nomor_hari": 24,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-25",
+      "hari": "Sabtu",
+      "nomor_hari": 25,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-26",
+      "hari": "Minggu",
+      "nomor_hari": 26,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-27",
+      "hari": "Senin",
+      "nomor_hari": 27,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-28",
+      "hari": "Selasa",
+      "nomor_hari": 28,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-29",
+      "hari": "Rabu",
+      "nomor_hari": 29,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-04-30",
+      "hari": "Kamis",
+      "nomor_hari": 30,
+      "bulan": 4,
+      "nama_bulan": "April",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-01",
+      "hari": "Jumat",
+      "nomor_hari": 1,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Buruh Internasional",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-05-02",
+      "hari": "Sabtu",
+      "nomor_hari": 2,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-03",
+      "hari": "Minggu",
+      "nomor_hari": 3,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-04",
+      "hari": "Senin",
+      "nomor_hari": 4,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-05",
+      "hari": "Selasa",
+      "nomor_hari": 5,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-06",
+      "hari": "Rabu",
+      "nomor_hari": 6,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-07",
+      "hari": "Kamis",
+      "nomor_hari": 7,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-08",
+      "hari": "Jumat",
+      "nomor_hari": 8,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-09",
+      "hari": "Sabtu",
+      "nomor_hari": 9,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-10",
+      "hari": "Minggu",
+      "nomor_hari": 10,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-11",
+      "hari": "Senin",
+      "nomor_hari": 11,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-12",
+      "hari": "Selasa",
+      "nomor_hari": 12,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-13",
+      "hari": "Rabu",
+      "nomor_hari": 13,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-14",
+      "hari": "Kamis",
+      "nomor_hari": 14,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Kenaikan Yesus Kristus",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-05-15",
+      "hari": "Jumat",
+      "nomor_hari": 15,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Kenaikan Yesus Kristus",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-05-16",
+      "hari": "Sabtu",
+      "nomor_hari": 16,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-17",
+      "hari": "Minggu",
+      "nomor_hari": 17,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-18",
+      "hari": "Senin",
+      "nomor_hari": 18,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-19",
+      "hari": "Selasa",
+      "nomor_hari": 19,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-20",
+      "hari": "Rabu",
+      "nomor_hari": 20,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-21",
+      "hari": "Kamis",
+      "nomor_hari": 21,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-22",
+      "hari": "Jumat",
+      "nomor_hari": 22,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-23",
+      "hari": "Sabtu",
+      "nomor_hari": 23,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-24",
+      "hari": "Minggu",
+      "nomor_hari": 24,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-25",
+      "hari": "Senin",
+      "nomor_hari": 25,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-26",
+      "hari": "Selasa",
+      "nomor_hari": 26,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-27",
+      "hari": "Rabu",
+      "nomor_hari": 27,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Raya Iduladha 1447 Hijriah",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-05-28",
+      "hari": "Kamis",
+      "nomor_hari": 28,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Raya Iduladha 1447 Hijriah",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-05-29",
+      "hari": "Jumat",
+      "nomor_hari": 29,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-30",
+      "hari": "Sabtu",
+      "nomor_hari": 30,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-05-31",
+      "hari": "Minggu",
+      "nomor_hari": 31,
+      "bulan": 5,
+      "nama_bulan": "Mei",
+      "akhir_pekan": true,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Raya Waisak 2570",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-06-01",
+      "hari": "Senin",
+      "nomor_hari": 1,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Lahir Pancasila",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-06-02",
+      "hari": "Selasa",
+      "nomor_hari": 2,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-03",
+      "hari": "Rabu",
+      "nomor_hari": 3,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-04",
+      "hari": "Kamis",
+      "nomor_hari": 4,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-05",
+      "hari": "Jumat",
+      "nomor_hari": 5,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-06",
+      "hari": "Sabtu",
+      "nomor_hari": 6,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-07",
+      "hari": "Minggu",
+      "nomor_hari": 7,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-08",
+      "hari": "Senin",
+      "nomor_hari": 8,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-09",
+      "hari": "Selasa",
+      "nomor_hari": 9,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-10",
+      "hari": "Rabu",
+      "nomor_hari": 10,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-11",
+      "hari": "Kamis",
+      "nomor_hari": 11,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-12",
+      "hari": "Jumat",
+      "nomor_hari": 12,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-13",
+      "hari": "Sabtu",
+      "nomor_hari": 13,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-14",
+      "hari": "Minggu",
+      "nomor_hari": 14,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-15",
+      "hari": "Senin",
+      "nomor_hari": 15,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-16",
+      "hari": "Selasa",
+      "nomor_hari": 16,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Tahun Baru Islam 1448 Hijriah",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-06-17",
+      "hari": "Rabu",
+      "nomor_hari": 17,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-18",
+      "hari": "Kamis",
+      "nomor_hari": 18,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-19",
+      "hari": "Jumat",
+      "nomor_hari": 19,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-20",
+      "hari": "Sabtu",
+      "nomor_hari": 20,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-21",
+      "hari": "Minggu",
+      "nomor_hari": 21,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-22",
+      "hari": "Senin",
+      "nomor_hari": 22,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-23",
+      "hari": "Selasa",
+      "nomor_hari": 23,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-24",
+      "hari": "Rabu",
+      "nomor_hari": 24,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-25",
+      "hari": "Kamis",
+      "nomor_hari": 25,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-26",
+      "hari": "Jumat",
+      "nomor_hari": 26,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-27",
+      "hari": "Sabtu",
+      "nomor_hari": 27,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-28",
+      "hari": "Minggu",
+      "nomor_hari": 28,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-29",
+      "hari": "Senin",
+      "nomor_hari": 29,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-06-30",
+      "hari": "Selasa",
+      "nomor_hari": 30,
+      "bulan": 6,
+      "nama_bulan": "Juni",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-01",
+      "hari": "Rabu",
+      "nomor_hari": 1,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-02",
+      "hari": "Kamis",
+      "nomor_hari": 2,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-03",
+      "hari": "Jumat",
+      "nomor_hari": 3,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-04",
+      "hari": "Sabtu",
+      "nomor_hari": 4,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-05",
+      "hari": "Minggu",
+      "nomor_hari": 5,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-06",
+      "hari": "Senin",
+      "nomor_hari": 6,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-07",
+      "hari": "Selasa",
+      "nomor_hari": 7,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-08",
+      "hari": "Rabu",
+      "nomor_hari": 8,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-09",
+      "hari": "Kamis",
+      "nomor_hari": 9,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-10",
+      "hari": "Jumat",
+      "nomor_hari": 10,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-11",
+      "hari": "Sabtu",
+      "nomor_hari": 11,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-12",
+      "hari": "Minggu",
+      "nomor_hari": 12,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-13",
+      "hari": "Senin",
+      "nomor_hari": 13,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-14",
+      "hari": "Selasa",
+      "nomor_hari": 14,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-15",
+      "hari": "Rabu",
+      "nomor_hari": 15,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-16",
+      "hari": "Kamis",
+      "nomor_hari": 16,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-17",
+      "hari": "Jumat",
+      "nomor_hari": 17,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-18",
+      "hari": "Sabtu",
+      "nomor_hari": 18,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-19",
+      "hari": "Minggu",
+      "nomor_hari": 19,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-20",
+      "hari": "Senin",
+      "nomor_hari": 20,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-21",
+      "hari": "Selasa",
+      "nomor_hari": 21,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-22",
+      "hari": "Rabu",
+      "nomor_hari": 22,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-23",
+      "hari": "Kamis",
+      "nomor_hari": 23,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-24",
+      "hari": "Jumat",
+      "nomor_hari": 24,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-25",
+      "hari": "Sabtu",
+      "nomor_hari": 25,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-26",
+      "hari": "Minggu",
+      "nomor_hari": 26,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-27",
+      "hari": "Senin",
+      "nomor_hari": 27,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-28",
+      "hari": "Selasa",
+      "nomor_hari": 28,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-29",
+      "hari": "Rabu",
+      "nomor_hari": 29,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-30",
+      "hari": "Kamis",
+      "nomor_hari": 30,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-07-31",
+      "hari": "Jumat",
+      "nomor_hari": 31,
+      "bulan": 7,
+      "nama_bulan": "Juli",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-01",
+      "hari": "Sabtu",
+      "nomor_hari": 1,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-02",
+      "hari": "Minggu",
+      "nomor_hari": 2,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-03",
+      "hari": "Senin",
+      "nomor_hari": 3,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-04",
+      "hari": "Selasa",
+      "nomor_hari": 4,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-05",
+      "hari": "Rabu",
+      "nomor_hari": 5,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-06",
+      "hari": "Kamis",
+      "nomor_hari": 6,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-07",
+      "hari": "Jumat",
+      "nomor_hari": 7,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-08",
+      "hari": "Sabtu",
+      "nomor_hari": 8,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-09",
+      "hari": "Minggu",
+      "nomor_hari": 9,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-10",
+      "hari": "Senin",
+      "nomor_hari": 10,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-11",
+      "hari": "Selasa",
+      "nomor_hari": 11,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-12",
+      "hari": "Rabu",
+      "nomor_hari": 12,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-13",
+      "hari": "Kamis",
+      "nomor_hari": 13,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-14",
+      "hari": "Jumat",
+      "nomor_hari": 14,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-15",
+      "hari": "Sabtu",
+      "nomor_hari": 15,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-16",
+      "hari": "Minggu",
+      "nomor_hari": 16,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-17",
+      "hari": "Senin",
+      "nomor_hari": 17,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Kemerdekaan Republik Indonesia",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-08-18",
+      "hari": "Selasa",
+      "nomor_hari": 18,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-19",
+      "hari": "Rabu",
+      "nomor_hari": 19,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-20",
+      "hari": "Kamis",
+      "nomor_hari": 20,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-21",
+      "hari": "Jumat",
+      "nomor_hari": 21,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-22",
+      "hari": "Sabtu",
+      "nomor_hari": 22,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-23",
+      "hari": "Minggu",
+      "nomor_hari": 23,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-24",
+      "hari": "Senin",
+      "nomor_hari": 24,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-25",
+      "hari": "Selasa",
+      "nomor_hari": 25,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Maulid Nabi Muhammad SAW",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-08-26",
+      "hari": "Rabu",
+      "nomor_hari": 26,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-27",
+      "hari": "Kamis",
+      "nomor_hari": 27,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-28",
+      "hari": "Jumat",
+      "nomor_hari": 28,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-29",
+      "hari": "Sabtu",
+      "nomor_hari": 29,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-30",
+      "hari": "Minggu",
+      "nomor_hari": 30,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-08-31",
+      "hari": "Senin",
+      "nomor_hari": 31,
+      "bulan": 8,
+      "nama_bulan": "Agustus",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-01",
+      "hari": "Selasa",
+      "nomor_hari": 1,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-02",
+      "hari": "Rabu",
+      "nomor_hari": 2,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-03",
+      "hari": "Kamis",
+      "nomor_hari": 3,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-04",
+      "hari": "Jumat",
+      "nomor_hari": 4,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-05",
+      "hari": "Sabtu",
+      "nomor_hari": 5,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-06",
+      "hari": "Minggu",
+      "nomor_hari": 6,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-07",
+      "hari": "Senin",
+      "nomor_hari": 7,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-08",
+      "hari": "Selasa",
+      "nomor_hari": 8,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-09",
+      "hari": "Rabu",
+      "nomor_hari": 9,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-10",
+      "hari": "Kamis",
+      "nomor_hari": 10,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-11",
+      "hari": "Jumat",
+      "nomor_hari": 11,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-12",
+      "hari": "Sabtu",
+      "nomor_hari": 12,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-13",
+      "hari": "Minggu",
+      "nomor_hari": 13,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-14",
+      "hari": "Senin",
+      "nomor_hari": 14,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-15",
+      "hari": "Selasa",
+      "nomor_hari": 15,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-16",
+      "hari": "Rabu",
+      "nomor_hari": 16,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-17",
+      "hari": "Kamis",
+      "nomor_hari": 17,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-18",
+      "hari": "Jumat",
+      "nomor_hari": 18,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-19",
+      "hari": "Sabtu",
+      "nomor_hari": 19,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-20",
+      "hari": "Minggu",
+      "nomor_hari": 20,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-21",
+      "hari": "Senin",
+      "nomor_hari": 21,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-22",
+      "hari": "Selasa",
+      "nomor_hari": 22,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-23",
+      "hari": "Rabu",
+      "nomor_hari": 23,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-24",
+      "hari": "Kamis",
+      "nomor_hari": 24,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-25",
+      "hari": "Jumat",
+      "nomor_hari": 25,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-26",
+      "hari": "Sabtu",
+      "nomor_hari": 26,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-27",
+      "hari": "Minggu",
+      "nomor_hari": 27,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-28",
+      "hari": "Senin",
+      "nomor_hari": 28,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-29",
+      "hari": "Selasa",
+      "nomor_hari": 29,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-09-30",
+      "hari": "Rabu",
+      "nomor_hari": 30,
+      "bulan": 9,
+      "nama_bulan": "September",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-01",
+      "hari": "Kamis",
+      "nomor_hari": 1,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-02",
+      "hari": "Jumat",
+      "nomor_hari": 2,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-03",
+      "hari": "Sabtu",
+      "nomor_hari": 3,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-04",
+      "hari": "Minggu",
+      "nomor_hari": 4,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-05",
+      "hari": "Senin",
+      "nomor_hari": 5,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-06",
+      "hari": "Selasa",
+      "nomor_hari": 6,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-07",
+      "hari": "Rabu",
+      "nomor_hari": 7,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-08",
+      "hari": "Kamis",
+      "nomor_hari": 8,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-09",
+      "hari": "Jumat",
+      "nomor_hari": 9,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-10",
+      "hari": "Sabtu",
+      "nomor_hari": 10,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-11",
+      "hari": "Minggu",
+      "nomor_hari": 11,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-12",
+      "hari": "Senin",
+      "nomor_hari": 12,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-13",
+      "hari": "Selasa",
+      "nomor_hari": 13,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-14",
+      "hari": "Rabu",
+      "nomor_hari": 14,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-15",
+      "hari": "Kamis",
+      "nomor_hari": 15,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-16",
+      "hari": "Jumat",
+      "nomor_hari": 16,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-17",
+      "hari": "Sabtu",
+      "nomor_hari": 17,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-18",
+      "hari": "Minggu",
+      "nomor_hari": 18,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-19",
+      "hari": "Senin",
+      "nomor_hari": 19,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-20",
+      "hari": "Selasa",
+      "nomor_hari": 20,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-21",
+      "hari": "Rabu",
+      "nomor_hari": 21,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-22",
+      "hari": "Kamis",
+      "nomor_hari": 22,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-23",
+      "hari": "Jumat",
+      "nomor_hari": 23,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-24",
+      "hari": "Sabtu",
+      "nomor_hari": 24,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-25",
+      "hari": "Minggu",
+      "nomor_hari": 25,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-26",
+      "hari": "Senin",
+      "nomor_hari": 26,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-27",
+      "hari": "Selasa",
+      "nomor_hari": 27,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-28",
+      "hari": "Rabu",
+      "nomor_hari": 28,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-29",
+      "hari": "Kamis",
+      "nomor_hari": 29,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-30",
+      "hari": "Jumat",
+      "nomor_hari": 30,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-10-31",
+      "hari": "Sabtu",
+      "nomor_hari": 31,
+      "bulan": 10,
+      "nama_bulan": "Oktober",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-01",
+      "hari": "Minggu",
+      "nomor_hari": 1,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-02",
+      "hari": "Senin",
+      "nomor_hari": 2,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-03",
+      "hari": "Selasa",
+      "nomor_hari": 3,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-04",
+      "hari": "Rabu",
+      "nomor_hari": 4,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-05",
+      "hari": "Kamis",
+      "nomor_hari": 5,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-06",
+      "hari": "Jumat",
+      "nomor_hari": 6,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-07",
+      "hari": "Sabtu",
+      "nomor_hari": 7,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-08",
+      "hari": "Minggu",
+      "nomor_hari": 8,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-09",
+      "hari": "Senin",
+      "nomor_hari": 9,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-10",
+      "hari": "Selasa",
+      "nomor_hari": 10,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-11",
+      "hari": "Rabu",
+      "nomor_hari": 11,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-12",
+      "hari": "Kamis",
+      "nomor_hari": 12,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-13",
+      "hari": "Jumat",
+      "nomor_hari": 13,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-14",
+      "hari": "Sabtu",
+      "nomor_hari": 14,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-15",
+      "hari": "Minggu",
+      "nomor_hari": 15,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-16",
+      "hari": "Senin",
+      "nomor_hari": 16,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-17",
+      "hari": "Selasa",
+      "nomor_hari": 17,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-18",
+      "hari": "Rabu",
+      "nomor_hari": 18,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-19",
+      "hari": "Kamis",
+      "nomor_hari": 19,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-20",
+      "hari": "Jumat",
+      "nomor_hari": 20,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-21",
+      "hari": "Sabtu",
+      "nomor_hari": 21,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-22",
+      "hari": "Minggu",
+      "nomor_hari": 22,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-23",
+      "hari": "Senin",
+      "nomor_hari": 23,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-24",
+      "hari": "Selasa",
+      "nomor_hari": 24,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-25",
+      "hari": "Rabu",
+      "nomor_hari": 25,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-26",
+      "hari": "Kamis",
+      "nomor_hari": 26,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-27",
+      "hari": "Jumat",
+      "nomor_hari": 27,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-28",
+      "hari": "Sabtu",
+      "nomor_hari": 28,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-29",
+      "hari": "Minggu",
+      "nomor_hari": 29,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-11-30",
+      "hari": "Senin",
+      "nomor_hari": 30,
+      "bulan": 11,
+      "nama_bulan": "November",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-01",
+      "hari": "Selasa",
+      "nomor_hari": 1,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-02",
+      "hari": "Rabu",
+      "nomor_hari": 2,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-03",
+      "hari": "Kamis",
+      "nomor_hari": 3,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-04",
+      "hari": "Jumat",
+      "nomor_hari": 4,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-05",
+      "hari": "Sabtu",
+      "nomor_hari": 5,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-06",
+      "hari": "Minggu",
+      "nomor_hari": 6,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-07",
+      "hari": "Senin",
+      "nomor_hari": 7,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-08",
+      "hari": "Selasa",
+      "nomor_hari": 8,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-09",
+      "hari": "Rabu",
+      "nomor_hari": 9,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-10",
+      "hari": "Kamis",
+      "nomor_hari": 10,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-11",
+      "hari": "Jumat",
+      "nomor_hari": 11,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-12",
+      "hari": "Sabtu",
+      "nomor_hari": 12,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-13",
+      "hari": "Minggu",
+      "nomor_hari": 13,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-14",
+      "hari": "Senin",
+      "nomor_hari": 14,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-15",
+      "hari": "Selasa",
+      "nomor_hari": 15,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-16",
+      "hari": "Rabu",
+      "nomor_hari": 16,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-17",
+      "hari": "Kamis",
+      "nomor_hari": 17,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-18",
+      "hari": "Jumat",
+      "nomor_hari": 18,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-19",
+      "hari": "Sabtu",
+      "nomor_hari": 19,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-20",
+      "hari": "Minggu",
+      "nomor_hari": 20,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-21",
+      "hari": "Senin",
+      "nomor_hari": 21,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-22",
+      "hari": "Selasa",
+      "nomor_hari": 22,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-23",
+      "hari": "Rabu",
+      "nomor_hari": 23,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-24",
+      "hari": "Kamis",
+      "nomor_hari": 24,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": true,
+      "kegiatan": [
+        {
+          "nama": "Cuti Hari Raya Natal",
+          "jenis": "cuti_bersama"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-12-25",
+      "hari": "Jumat",
+      "nomor_hari": 25,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": true,
+      "cuti_bersama": false,
+      "kegiatan": [
+        {
+          "nama": "Hari Raya Natal",
+          "jenis": "libur_nasional"
+        }
+      ]
+    },
+    {
+      "tanggal": "2026-12-26",
+      "hari": "Sabtu",
+      "nomor_hari": 26,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-27",
+      "hari": "Minggu",
+      "nomor_hari": 27,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": true,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-28",
+      "hari": "Senin",
+      "nomor_hari": 28,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-29",
+      "hari": "Selasa",
+      "nomor_hari": 29,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-30",
+      "hari": "Rabu",
+      "nomor_hari": 30,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    },
+    {
+      "tanggal": "2026-12-31",
+      "hari": "Kamis",
+      "nomor_hari": 31,
+      "bulan": 12,
+      "nama_bulan": "Desember",
+      "akhir_pekan": false,
+      "libur_nasional": false,
+      "cuti_bersama": false,
+      "kegiatan": []
+    }
+  ],
+  "daftar_hari_libur_dan_peristiwa": [
+    {
+      "tanggal": "2026-01-01",
+      "hari": "Kamis",
+      "nama": "Tahun Baru Masehi 2026",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-01-16",
+      "hari": "Jumat",
+      "nama": "Isra Mikraj Nabi Muhammad SAW",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-02-16",
+      "hari": "Senin",
+      "nama": "Cuti Tahun Baru Imlek 2577 Kongzili",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-02-17",
+      "hari": "Selasa",
+      "nama": "Tahun Baru Imlek 2577 Kongzili",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-03-18",
+      "hari": "Rabu",
+      "nama": "Cuti Hari Suci Nyepi Tahun Baru Saka 1948",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-03-19",
+      "hari": "Kamis",
+      "nama": "Hari Suci Nyepi Tahun Baru Saka 1948",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-03-20",
+      "hari": "Jumat",
+      "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-03-21",
+      "hari": "Sabtu",
+      "nama": "Hari Raya Idulfitri 1447 Hijriah",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-03-22",
+      "hari": "Minggu",
+      "nama": "Hari Raya Idulfitri 1447 Hijriah",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-03-23",
+      "hari": "Senin",
+      "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-03-24",
+      "hari": "Selasa",
+      "nama": "Cuti Hari Raya Idulfitri 1447 Hijriah",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-04-03",
+      "hari": "Jumat",
+      "nama": "Wafat Yesus Kristus",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-04-05",
+      "hari": "Minggu",
+      "nama": "Hari Paskah",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-05-01",
+      "hari": "Jumat",
+      "nama": "Hari Buruh Internasional",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-05-14",
+      "hari": "Kamis",
+      "nama": "Kenaikan Yesus Kristus",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-05-15",
+      "hari": "Jumat",
+      "nama": "Cuti Kenaikan Yesus Kristus",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-05-27",
+      "hari": "Rabu",
+      "nama": "Hari Raya Iduladha 1447 Hijriah",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-05-28",
+      "hari": "Kamis",
+      "nama": "Cuti Hari Raya Iduladha 1447 Hijriah",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-05-31",
+      "hari": "Minggu",
+      "nama": "Hari Raya Waisak 2570",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-06-01",
+      "hari": "Senin",
+      "nama": "Hari Lahir Pancasila",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-06-16",
+      "hari": "Selasa",
+      "nama": "Tahun Baru Islam 1448 Hijriah",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-08-17",
+      "hari": "Senin",
+      "nama": "Hari Kemerdekaan Republik Indonesia",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-08-25",
+      "hari": "Selasa",
+      "nama": "Maulid Nabi Muhammad SAW",
+      "jenis": "libur_nasional"
+    },
+    {
+      "tanggal": "2026-12-24",
+      "hari": "Kamis",
+      "nama": "Cuti Hari Raya Natal",
+      "jenis": "cuti_bersama"
+    },
+    {
+      "tanggal": "2026-12-25",
+      "hari": "Jumat",
+      "nama": "Hari Raya Natal",
+      "jenis": "libur_nasional"
+    }
+  ],
+  "periode_libur_panjang": [
+    {
+      "mulai": "2026-01-16",
+      "selesai": "2026-01-18",
+      "durasi_hari": 3
+    },
+    {
+      "mulai": "2026-02-14",
+      "selesai": "2026-02-17",
+      "durasi_hari": 4
+    },
+    {
+      "mulai": "2026-03-18",
+      "selesai": "2026-03-24",
+      "durasi_hari": 7
+    },
+    {
+      "mulai": "2026-04-03",
+      "selesai": "2026-04-05",
+      "durasi_hari": 3
+    },
+    {
+      "mulai": "2026-05-01",
+      "selesai": "2026-05-03",
+      "durasi_hari": 3
+    },
+    {
+      "mulai": "2026-05-14",
+      "selesai": "2026-05-17",
+      "durasi_hari": 4
+    },
+    {
+      "mulai": "2026-05-27",
+      "selesai": "2026-05-28",
+      "durasi_hari": 2
+    },
+    {
+      "mulai": "2026-05-30",
+      "selesai": "2026-06-01",
+      "durasi_hari": 3
+    },
+    {
+      "mulai": "2026-08-15",
+      "selesai": "2026-08-17",
+      "durasi_hari": 3
+    },
+    {
+      "mulai": "2026-12-24",
+      "selesai": "2026-12-27",
+      "durasi_hari": 4
+    }
+  ]
+}
