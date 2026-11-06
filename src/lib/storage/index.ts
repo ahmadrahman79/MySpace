@@ -1,9 +1,10 @@
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 
 export interface UploadResult {
   url: string;
-  provider: 'local' | 'cloudinary' | 'supabase' | 'uploadthing';
+  provider: 'local' | 'cloudinary' | 'supabase';
   filename: string;
   size?: number;
 }
@@ -15,14 +16,18 @@ export async function uploadImage(
 ): Promise<UploadResult> {
   const provider = (process.env.STORAGE_PROVIDER || (process.env.NEXT_PUBLIC_SUPABASE_URL && !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('your-project') ? 'supabase' : 'local')).toLowerCase();
 
-  // 1. Cloudinary Direct REST API (Zero external SDK required)
+  // Extension sanitization
+  const rawExt = path.extname(filename).toLowerCase().replace(/[^a-z0-9]/g, '');
+  const ext = ['jpg', 'jpeg', 'png', 'webp'].includes(rawExt) ? rawExt : 'jpg';
+  const secureUniqueName = `${Date.now()}_${crypto.randomUUID()}.${ext}`;
+
+  // 1. Cloudinary Direct REST API
   const cloudName = process.env.CLOUDINARY_CLOUD_NAME;
   const apiKey = process.env.CLOUDINARY_API_KEY;
   const apiSecret = process.env.CLOUDINARY_API_SECRET;
 
   if (provider === 'cloudinary' && cloudName && apiKey && apiSecret) {
     try {
-      const crypto = await import('crypto');
       const timestamp = Math.round(new Date().getTime() / 1000).toString();
       const folder = 'productivity-system';
       const signaturePayload = `folder=${folder}&timestamp=${timestamp}${apiSecret}`;
@@ -46,15 +51,12 @@ export async function uploadImage(
         return {
           url: json.secure_url,
           provider: 'cloudinary',
-          filename: json.original_filename || filename,
+          filename: secureUniqueName,
           size: json.bytes,
         };
-      } else {
-        const errText = await res.text();
-        console.error('Cloudinary REST API error:', errText);
       }
     } catch (e) {
-      console.error('Cloudinary upload error, falling back to local storage:', e);
+      console.error('Cloudinary upload error:', e);
     }
   }
 
@@ -64,8 +66,7 @@ export async function uploadImage(
 
   if (provider === 'supabase' && supabaseUrl && supabaseKey && !supabaseUrl.includes('your-project')) {
     try {
-      const cleanName = `${Date.now()}_${filename.replace(/[^a-zA-Z0-9.-]/g, '_')}`;
-      const uploadEndpoint = `${supabaseUrl}/storage/v1/object/productivity-images/${cleanName}`;
+      const uploadEndpoint = `${supabaseUrl}/storage/v1/object/productivity-images/${secureUniqueName}`;
 
       const res = await fetch(uploadEndpoint, {
         method: 'POST',
@@ -78,16 +79,16 @@ export async function uploadImage(
       });
 
       if (res.ok) {
-        const publicUrl = `${supabaseUrl}/storage/v1/object/public/productivity-images/${cleanName}`;
+        const publicUrl = `${supabaseUrl}/storage/v1/object/public/productivity-images/${secureUniqueName}`;
         return {
           url: publicUrl,
           provider: 'supabase',
-          filename: cleanName,
+          filename: secureUniqueName,
           size: fileBuffer.length,
         };
       }
     } catch (e) {
-      console.error('Supabase storage error, falling back to local storage:', e);
+      console.error('Supabase storage error:', e);
     }
   }
 
@@ -97,14 +98,13 @@ export async function uploadImage(
     fs.mkdirSync(uploadsDir, { recursive: true });
   }
 
-  const cleanFilename = `${Date.now()}_${filename.replace(/[^a-zA-Z0-9.-]/g, '_')}`;
-  const filePath = path.join(uploadsDir, cleanFilename);
+  const filePath = path.join(uploadsDir, secureUniqueName);
   fs.writeFileSync(filePath, fileBuffer);
 
   return {
-    url: `/uploads/${cleanFilename}`,
+    url: `/uploads/${secureUniqueName}`,
     provider: 'local',
-    filename: cleanFilename,
+    filename: secureUniqueName,
     size: fileBuffer.length,
   };
 }

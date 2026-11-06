@@ -56,3 +56,153 @@
 .weihu-card {
   box-shadow: 0 10px 25px -5px rgba(120, 100, 180, 0.06), 0 8px 10px -6px rgba(120, 100, 180, 0.04);
 }
+
+/* =========================================================================
+   TIPTAP DOCUMENT & WRITING MODE STYLES (NOTION & GOOGLE DOCS EXPERIENCE)
+   ========================================================================= */
+.tiptap-doc {
+  outline: none;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.tiptap-doc p {
+  margin-bottom: 0.75rem;
+}
+
+.tiptap-doc h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+.dark .tiptap-doc h1 {
+  color: #f8fafc;
+}
+
+.tiptap-doc h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+.dark .tiptap-doc h2 {
+  color: #f1f5f9;
+}
+
+.tiptap-doc h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+.dark .tiptap-doc h3 {
+  color: #e2e8f0;
+}
+
+.tiptap-doc ul:not([data-type="taskList"]) {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.tiptap-doc ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.tiptap-doc li {
+  margin-bottom: 0.25rem;
+}
+
+/* Task list / checklist */
+.tiptap-doc ul[data-type="taskList"] {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0.85rem;
+}
+
+.tiptap-doc li[data-type="taskItem"] {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.tiptap-doc li[data-type="taskItem"] input[type="checkbox"] {
+  margin-top: 0.35rem;
+  cursor: pointer;
+  accent-color: #059669;
+  width: 1rem;
+  height: 1rem;
+}
+
+.tiptap-doc blockquote {
+  border-left: 3px solid #059669;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #475569;
+  background-color: rgba(241, 245, 249, 0.5);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* Notion / Google Sheet Style Table */
+.tiptap-doc table.editor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.825rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.dark .tiptap-doc table.editor-table {
+  border-color: #334155;
+}
+
+.tiptap-doc table.editor-table th,
+.tiptap-doc table.editor-table td {
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  vertical-align: top;
+  text-align: left;
+}
+.dark .tiptap-doc table.editor-table th,
+.dark .tiptap-doc table.editor-table td {
+  border-color: #334155;
+}
+
+.tiptap-doc table.editor-table th {
+  background-color: #f8fafc;
+  font-weight: 700;
+  color: #334155;
+}
+.dark .tiptap-doc table.editor-table th {
+  background-color: #1e293b;
+  color: #e2e8f0;
+}
+
+.tiptap-doc table.editor-table tr:hover {
+  background-color: rgba(248, 250, 252, 0.7);
+}
+.dark .tiptap-doc table.editor-table tr:hover {
+  background-color: rgba(30, 41, 59, 0.5);
+}
+
+.tiptap-doc p.is-editor-empty:first-child::before {
+  color: #94a3b8;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
